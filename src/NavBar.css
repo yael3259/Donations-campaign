@@ -1,0 +1,44 @@
+.navbar-container {
+    position: absolute;
+    top: 18px;
+    left: 22%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-navbar {
+    padding: 31px;
+    background-color: rgba(10, 10, 10, 0.224);
+    /* background: none; */
+    color: rgb(255, 255, 255);
+    border-radius: 0%;
+    padding-bottom: 19px;
+    margin-bottom: 80px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.contaxt input[type="color"] {
+    margin-right: -730px;
+    /* margin-top: 22px; */
+    margin-top: 3.15%;
+    margin-bottom: -14%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.coin {
+    /* background-color: grey; */
+    visibility: hidden;
+    background: none;
+    color: rgb(251, 217, 249);
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: -22px;
+    border-color: white;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 5px;
+}

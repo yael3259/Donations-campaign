@@ -1,0 +1,170 @@
+.list {
+    /* background-image: url('https://media0.giphy.com/media/e4muODbpQOmS7j3tV8/giphy.gif?cid=ecf05e47je6xt7arqb66few4bo50m2arzwgtsjobcqehr6oc&ep=v1_gifs_related&rid=giphy.gif&ct=g');
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    text-align: center;
+    background-color: rgb(247, 211, 211);
+}
+
+.arrD {
+    /* color: rgb(4, 5, 61); */
+    color: rgb(8, 72, 124);
+}
+
+@keyframes glow {
+    0% {text-shadow: 0 0 5px rgba(255, 215, 0, 0.5), 0 0 10px rgba(255, 215, 0, 0.5);}
+    50% {text-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 30px rgba(255, 215, 0, 1);}
+    100% {text-shadow: 0 0 5px rgba(255, 215, 0, 0.5), 0 0 10px rgba(255, 215, 0, 0.5);}
+}
+
+.amount-high {
+    font-size: 2em;
+    background: linear-gradient(45deg, #ccff00, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 0.5s infinite alternate;
+}
+
+.giphy-embed {
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    top: 10%;
+    left: 2px;
+    opacity: 90%;
+}
+
+.giphy-embed2 {
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    top: 10%;
+    right: 0px;
+    opacity: 90%;
+}
+
+.giphy-embed3 {
+    position: absolute;
+    top: 88%;
+    right: 0.75%;
+    opacity: 100%;
+}
+
+.giphy-embed32 {
+    position: absolute;
+    transform: rotate(180deg);
+    top: 88%;
+    right: 0.5%;
+}
+
+.giphy-embed4 {
+    position: absolute;
+    transform: rotate(180deg);
+    top: 88%;
+    left: 0.75%;
+}
+
+.giphy-embed42 {
+    position: absolute;
+    top: 88%;
+    left: 0.5%;
+}
+
+.giphy-embed5 {
+    position: absolute;
+    transform: rotate(180deg);
+    top: 88%;
+    left: 45%;
+    opacity: 40%;
+}
+
+body {
+    font-family: "Assistant", sans-serif;
+    direction: rtl;
+}
+
+table {
+    border: 2px solid #ffffff;
+    /* background-color: rgb(229, 238, 243); */
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-weight: 300;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+tr>th {
+    font-weight: 300;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+}
+
+table tr {
+    border: 1.5px solid #ffffff;
+    padding: 5px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bolder;
+}
+
+table th {
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.sort {
+    color: #9c5151;
+    background-color: rgba(255, 255, 255, 0.807);
+    font-size: 20px;
+    font-family: "Assistant", sans-serif;
+    border: 1px solid #e8adad;
+    border-radius: 11px;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sort2 {
+    color: #9c5151;
+    background-color: rgba(255, 255, 255, 0.807);
+    font-size: 20px;
+    font-family: "Assistant", sans-serif;
+    border: 1px solid #e8adad;
+    border-radius: 11px;
+    padding: 12px;
+    margin-left: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search {
+    color: rgb(255, 255, 255);
+    background-color: rgba(186, 125, 125, 0.807);
+    font-size: 20px;
+    font-family: "Assistant", sans-serif;
+    border: 1px solid #b56767;
+    border-radius: 11px;
+    padding: 12px;
+    font-weight: bold;
+    cursor: text;
+}
+
+.search::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.tytle1 {
+    font-size: 45px;
+    color: rgb(195, 147, 26);
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+}
