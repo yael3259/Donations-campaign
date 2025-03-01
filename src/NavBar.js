@@ -1,6 +1,7 @@
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
-import { MyColorContext, RateContexts, CoinContext } from "./contexts";
+import pic from './files/pic.png';
+import { MyColorContext } from "./contexts";
 import { useContext } from "react";
 
 
@@ -8,14 +9,14 @@ export const A = () => {
     let theColor = useContext(MyColorContext);
 
     return (
-        <><p className='colorText'><h1 className='colorContext' style={{ backgroundColor: theColor.theColor }}>שנה את גווני האתר</h1></p></>
+        <div className='colorText'><h1 className='colorContext'
+            style={{ backgroundColor: theColor.theColor }}>שנה את גווני האתר</h1>
+        </div>
     );
 }
 
 export const NavBar = ({ onCoinChange }) => {
-
     let color = useContext(MyColorContext);
-
 
     const handleColorChange = (e) => {
         const newColor = e.target.value;
@@ -29,20 +30,20 @@ export const NavBar = ({ onCoinChange }) => {
     };
 
     return (
-        <div class="navbar-container" >
-            <br></br>
-
-            <p className="contaxt">
+        <div className="navbar">
+            <div className="contaxt">
                 <input type="color" onChange={handleColorChange} />
-            </p>
+            </div>
+            <div>
 
-            {/* <input type="button" value={buttonText} className="coin" onClick={handleCoinChange} /> */}
-
-            <input type="button" className="coin" value="הצג את האתר בדולרים/ בשקלים" onClick={onCoinChange} />
-            
-            <NavLink to="home" className="overlay-navbar" style={{ color: color.color }}>עמוד הבית</NavLink>
-            <NavLink to="form" className="overlay-navbar" style={{ color: color.color }}>לתרומה</NavLink>
-            <NavLink to="list" className="overlay-navbar" style={{ color: color.color }}>עמוד תורמים</NavLink>
+            </div>
+            <div className="navbar-container">
+                {/* <input type="button" className="coin" value="הצג את האתר בדולרים/ בשקלים" onClick={onCoinChange} /> */}
+                <NavLink to="home" className="overlay-navbar" style={{ color: color.color }}>עמוד הבית</NavLink>
+                <NavLink to="form" className="overlay-navbar" style={{ color: color.color }}>לתרומה</NavLink>
+                <NavLink to="list" className="overlay-navbar" style={{ color: color.color }}>עמוד תורמים</NavLink>
+            </div>
         </div>
-    )
+    );
 }
+

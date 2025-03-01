@@ -29,7 +29,8 @@ export const HomePage = () => {
       <br />
       <div className='image'>
         <img src='https://media4.giphy.com/media/3ohhwzIw3bISRhQWME/giphy.gif?cid=ecf05e47dadkyxrkbt3npdxe71z9imsdxgaa0oybntpbozfi&ep=v1_gifs_related&rid=giphy.gif&ct=s' className='gliders' height={562} width={880} alt="Gliders" />
-        <img src='https://images.squarespace-cdn.com/content/v1/5e3578618a73ef3c81b55932/0840ac28-0807-4106-9d27-458b0dc14e2b/AdobeStock_454586489.png' height={562} width={880} alt="Stock" />
+        <img src='https://images.squarespace-cdn.com/content/v1/5e3578618a73ef3c81b55932/0840ac28-0807-4106-9d27-458b0dc14e2b/AdobeStock_454586489.png' className="pic_1" alt="Stock" />
+        {/* <img src='./fils/hands.png' /> */}
       </div>
 
       <div className="text-container">
@@ -44,7 +45,7 @@ export const HomePage = () => {
         </div>
       </div>
       <div id="bthn" lang="en"></div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br />
 
     </div>
   );

@@ -1,12 +1,13 @@
 .HomePage {
     color: #3c414a;
     text-align: center;
+    padding-bottom: 6.9px !important;
     background-color: #3c414a;
 }
 
 .image {
     text-align: right;
-    border-radius: 40px 40px 40px 40px;
+    border-radius: 40px;
     filter: blur(3.5px);
     padding-right: 10px;
     padding-top: 10px;
@@ -16,7 +17,6 @@
     position: absolute;
     top: 6%;
     left: 20%;
-    /* left: 11.3%; */
     transform: translate(-50%, -50%);
 }
 
@@ -37,6 +37,11 @@
     opacity: 35%;
 }
 
+.pic_1 {
+    height: 575px;
+    width: 880px;
+}
+
 .text-container {
     position: absolute;
     top: 78%;
@@ -45,11 +50,10 @@
 }
 
 .overlay-text {
-    padding: 15px;
+    padding: 10px 15px 15px 15px;
     background-color: rgba(0, 98, 255, 0.441);
     /* background-color: rgba(10, 10, 10, 0.35); */
     text-decoration: none;
-
     color: white;
     font-size: 21px;
     font-weight: bold;
@@ -111,63 +115,64 @@
 
 #bthn {
     position: fixed;
-    /* right: 74.9%; */
-    right: 50px;
-    bottom: 20%;
-    padding: 10px;
-    text-align: center;
-    max-width: 300px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
+    right: 25px;
+    bottom: 6.5% !important;
+    width: 300px !important;
+}
 
-/* .changing-text {
-    font-size: 60px;
-    font-family: Arial, sans-serif;
-    position: relative;
-    overflow: hidden;
-    text-align: right;
-  
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-  }
-  
-  @keyframes changeText {
-    0%, 20% {
-        opacity: 1;
-        transform: translateX(0);
+@media (max-width: 1100px) {
+    .HomePage{
+        padding-bottom: 49px !important;
     }
-    25%, 45% {
-        opacity: 0;
-        transform: translateX(-30%);
+
+    .frame {
+        transform: translate(15%, -55.5%);
     }
-    50%, 70% {
-        opacity: 0;
-        transform: translateX(25%);
+
+    .overlay-text{
+        visibility: hidden;
     }
-    75%, 95% {
-        opacity: 1;
-        transform: translateX(20);
+
+    .pic_1 {
+        width: 99%;
+        height: 500px;
     }
-  }
-  
-  .changing-text::before {
-    content: "טקסט ראשון";
-    color: #3498db;
-    position: absolute;
-    top: 0;
-    right: 10%;
-    animation: changeText 5s infinite;
-  } */
-/* 
-  .changing-text::after {
-    content: "טקסט שני";
-    color: #3c025d;
-    position: absolute;
-    top: 50%;
-    right: 30%;
-    animation: changeText 4s infinite;
-  } */
+}
+
+@media (max-width: 768px) {
+    .HomePage{
+        padding-bottom: 14%;
+    }
+
+    .frame {
+        transform: translate(-12%, -64%);
+    }
+
+    .pic_1 {
+        width: 98.5%;
+        height: 450px;
+    }
+
+    .caption {
+        font-size: 20px;
+    }
+
+    .overlay-text {
+        visibility: inherit;
+        position: absolute;
+        top: 60px;
+        width: 165px;
+        height: 20px;
+    }
+
+    body, .HomePage {
+        overflow-x: hidden;
+    }
+
+    #bthn {
+        position: relative !important;
+        right: 0 !important;
+        top: 120px;
+        margin-bottom: 80px !important;
+    }
+}
